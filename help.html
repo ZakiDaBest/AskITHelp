@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ask IT Helpdesk - OSIS SMA Islam Al Azhar 16</title>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <!-- Memuat Tailwind CSS --><script src="https://cdn.tailwindcss.com"></script>
+    <!-- Memuat Font Inter --><link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        /* Menggunakan font Inter sebagai default */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <!-- Navigasi Header --><header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo / Judul Website --><div class="flex-shrink-0">
+                    <a href="#beranda" class="text-2xl font-bold text-green-700">
+                        Ask IT Helpdesk
+                    </a>
+                </div>
+                
+                <!-- Navigasi Desktop --><div class="hidden md:flex md:items-center md:space-x-8">
+                    <a href="#beranda" class="text-gray-600 hover:text-green-700 font-medium">Beranda</a>
+                    <a href="#tentang" class="text-gray-600 hover:text-green-700 font-medium">Tentang Kami</a>
+                    <a href="#layanan" class="text-gray-600 hover:text-green-700 font-medium">Layanan</a>
+                    <a href="#tim" class="text-gray-600 hover:text-green-700 font-medium">Tim Kami</a>
+                    <a href="#bantuan" class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-green-600 hover:bg-green-700">
+                        Contact Us
+                    </a>
+                </div>
+                
+                <!-- Tombol Menu Mobile --><div class="md:hidden">
+                    <button id="menu-button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-500 hover:text-gray-700 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-green-500">
+                        <span class="sr-only">Buka menu utama</span>
+                        <!-- Icon Hamburger --><svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Menu Mobile (hidden by default) --><div id="mobile-menu" class="md:hidden hidden">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#beranda" class="text-gray-700 hover:bg-green-50 hover:text-green-700 block px-3 py-2 rounded-md text-base font-medium">Beranda</a>
+                <a href="#tentang" class="text-gray-700 hover:bg-green-50 hover:text-green-700 block px-3 py-2 rounded-md text-base font-medium">Tentang Kami</a>
+                <a href="#layanan" class="text-gray-700 hover:bg-green-50 hover:text-green-700 block px-3 py-2 rounded-md text-base font-medium">Layanan</a>
+                <a href="#tim" class="text-gray-700 hover:bg-green-50 hover:text-green-700 block px-3 py-2 rounded-md text-base font-medium">Tim Kami</a>
+                <a href="#bantuan" class="text-white bg-green-600 hover:bg-green-700 block px-3 py-2 rounded-md text-base font-medium">Minta Bantuan</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Konten Utama --><main>
+
+        <!-- Bagian 1: Beranda (Hero) --><section id="beranda" class="bg-green-50 min-h-[calc(100vh-4rem)] flex items-center">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+                <div class="flex flex-col md:flex-row items-center gap-12">
+                    <!-- Teks Hero --><div class="md:w-1/2 text-center md:text-left">
+                        <h1 class="text-4xl md:text-5xl font-extrabold text-green-800 leading-tight">
+                            Punya Masalah Teknis?
+                            <span class="block text-gray-800">Kami Siap Membantu!</span>
+                        </h1>
+                        <p class="mt-6 text-lg text-gray-700 max-w-lg mx-auto md:mx-0">
+                            Selamat datang di Ask IT Helpdesk, program kerja Sekbid IT OSIS SMA Islam Al Azhar 16. Kami hadir untuk memberikan solusi cepat atas masalah teknologi Anda di lingkungan sekolah.
+                        </p>
+                        <div class="mt-10">
+                            <a href="#bantuan" class="inline-block bg-green-600 text-white font-bold text-lg px-8 py-3 rounded-lg shadow-lg hover:bg-green-700 transition duration-300">
+                                Minta Bantuan ➔
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Gambar Hero --><div class="md:w-1/2">
+                        <img src="/Images/Gendong.jpg" alt="Ilustrasi IT Helpdesk" class="rounded-lg shadow-xl w-full">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bagian 2: Tentang Kami --><section id="tentang" class="py-20 md:py-28 bg-white">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h2 class="text-base font-semibold text-green-600 uppercase tracking-wide">Tentang Kami</h2>
+                <p class="mt-2 text-3xl md:text-4xl font-extrabold text-gray-900">
+                    💡 Apa itu Ask IT Helpdesk?
+                </p>
+                <p class="mt-6 text-lg text-gray-600 leading-relaxed">
+                    Ask IT Helpdesk adalah program kerja (proker) dari Seksi Bidang IT OSIS SMA Islam Al Azhar 16. Tujuan utama kami adalah membantu seluruh warga sekolah—mulai dari teman-teman siswa, Bapak/Ibu guru, hingga pengurus OSIS—dalam mengatasi berbagai kendala dan masalah teknis sehari-hari. Jangan biarkan laptop lambat atau proyektor tidak terhubung menghambat aktivitas belajar mengajar Anda!
+                </p>
+            </div>
+        </section>
+
+        <!-- Bagian 3: Layanan --><section id="layanan" class="py-20 md:py-28 bg-gray-100">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center">
+                    <h2 class="text-base font-semibold text-green-600 uppercase tracking-wide">Layanan Kami</h2>
+                    <p class="mt-2 text-3xl md:text-4xl font-extrabold text-gray-900">
+                        🛠️ Apa yang Bisa Kami Bantu?
+                    </p>
+                </div>
+                
+                <div class="mt-16 grid md:grid-cols-3 gap-8">
+                    <!-- Kartu Layanan 1 --><div class="bg-white rounded-lg shadow-lg p-8 transform hover:scale-105 transition duration-300">
+                        <div class="flex items-center justify-center h-12 w-12 rounded-md bg-green-100 text-green-700">
+                            <!-- Icon: Computer Desktop --><svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M9 17.25v1.007a3 3 0 0 1-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0 1 15 18.257V17.25m6-12V15a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 15V5.25A2.25 2.25 0 0 1 5.25 3h13.5A2.25 2.25 0 0 1 21 5.25Z" />
+                            </svg>
+                        </div>
+                        <h3 class="mt-6 text-xl font-bold text-gray-900">Masalah Hardware</h3>
+                        <p class="mt-4 text-base text-gray-600">
+                            Laptop lambat, PC error, masalah koneksi proyektor di kelas, atau bantuan menyambungkan printer.
+                        </p>
+                    </div>
+                    
+                    <!-- Kartu Layanan 2 --><div class="bg-white rounded-lg shadow-lg p-8 transform hover:scale-105 transition duration-300">
+                        <div class="flex items-center justify-center h-12 w-12 rounded-md bg-green-100 text-green-700">
+                            <!-- Icon: Cog/Software --><svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 6h9.75M10.5 6a1.5 1.5 0 1 1-3 0m3 0a1.5 1.5 0 1 0-3 0M3.75 6H7.5m3 12h9.75m-9.75 0a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0M3.75 18H7.5m3-6h9.75m-9.75 0a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0M3.75 12H7.5" />
+                            </svg>
+                        </div>
+                        <h3 class="mt-6 text-xl font-bold text-gray-900">Masalah Software</h3>
+                        <p class="mt-4 text-base text-gray-600">
+                            Bantuan instalasi software, sistem operasi (Windows/macOS) bermasalah, atau panduan penggunaan aplikasi sekolah.
+                        </p>
+                    </div>
+                    
+                    <!-- Kartu Layanan 3 --><div class="bg-white rounded-lg shadow-lg p-8 transform hover:scale-105 transition duration-300">
+                        <div class="flex items-center justify-center h-12 w-12 rounded-md bg-green-100 text-green-700">
+                            <!-- Icon: Wifi --><svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M8.288 15.038a5.25 5.25 0 0 1 7.424 0M5.106 11.856c3.807-3.808 9.98-3.808 13.788 0M1.924 8.674c5.565-5.565 14.587-5.565 20.152 0M12.53 18.22l-.53.53-.53-.53a.75.75 0 0 1 1.06 0Z" />
+                            </svg>
+                        </div>
+                        <h3 class="mt-6 text-xl font-bold text-gray-900">Konektivitas & Akun</h3>
+                        <p class="mt-4 text-base text-gray-600">
+                            Kesulitan terhubung dengan Wi-Fi sekolah, masalah akun, atau dukungan teknis untuk acara OSIS.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bagian 4: Tim Kami --><section id="tim" class="py-20 md:py-28 bg-white">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center">
+                    <h2 class="text-base font-semibold text-green-600 uppercase tracking-wide">Tim Kami</h2>
+                    <p class="mt-2 text-3xl md:text-4xl font-extrabold text-gray-900">
+                        💻 Kenali Tim IT Kami
+                    </p>
+                    <p class="mt-4 text-lg text-gray-600">
+                        Kami berempat dari Sekbid IT yang siap siaga membantu Anda.
+                    </p>
+                </div>
+
+                <div class="mt-16 grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-8">
+                    <!-- Tim Anggota 1 --><div class="text-center">
+                        <img class="mx-auto h-32 w-32 rounded-full object-cover shadow-lg" src="/Images/Zaki.png" alt="Foto Anggota Tim 1">
+                        <h3 class="mt-6 text-lg font-bold text-gray-900">Zaki</h3>
+                        <p class="mt-1 text-base font-medium text-green-600">Ketua Sekbid</p>
+                        <p class="mt-1 text-sm text-gray-500">Keahlian: Audio Mixing, Jaringan & Software</p>
+                    </div>
+                    
+                    <!-- Tim Anggota 2 --><div class="text-center">
+                        <img class="mx-auto h-32 w-32 rounded-full object-cover shadow-lg" src="/Images/Adzra.png" alt="Foto Anggota Tim 2">
+                        <h3 class="mt-6 text-lg font-bold text-gray-900">Adzra</h3>
+                        <p class="mt-1 text-base font-medium text-green-600">Anggota Sekbid</p>
+                        <p class="mt-1 text-sm text-gray-500">Keahlian: Desain & Multimedia</p>
+                    </div>
+
+                    <!-- Tim Anggota 3 --><div class="text-center">
+                        <img class="mx-auto h-32 w-32 rounded-full object-cover shadow-lg" src="/Images/PlaceHolder.png" alt="Foto Anggota Tim 3">
+                        <h3 class="mt-6 text-lg font-bold text-gray-900">Neta</h3>
+                        <p class="mt-1 text-base font-medium text-green-600">Anggota Sekbid</p>
+                        <p class="mt-1 text-sm text-gray-500">Keahlian: Desain & Multimedia</p>
+                    </div>
+
+                    <!-- Tim Anggota 4 --><div class="text-center">
+                        <img class="mx-auto h-32 w-32 rounded-full object-cover shadow-lg" src="/Images/PlaceHolder.png" alt="Foto Anggota Tim 4">
+                        <h3 class="mt-6 text-lg font-bold text-gray-900">Anggun</h3>
+                        <p class="mt-1 text-base font-medium text-green-600">Anggota Sekbid</p>
+                        <p class="mt-1 text-sm text-gray-500">Keahlian: Desain & Multimedia</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bagian 5: Minta Bantuan --><section id="bantuan" class="py-20 md:py-28 bg-green-50">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center">
+                    <h2 class="text-base font-semibold text-green-600 uppercase tracking-wide">Minta Bantuan</h2>
+                    <p class="mt-2 text-3xl md:text-4xl font-extrabold text-gray-900">
+                        🚀 Butuh Bantuan? Ini Caranya!
+                    </p>
+                </div>
+
+                <!-- Kontainer kartu yang diedit: 2 kolom dan terpusat di layar besar -->
+                <div class="mt-16 grid grid-cols-1 md:grid-cols-2 gap-8 lg:max-w-4xl lg:mx-auto">
+                    <!-- Opsi 1: Formulir --><div class="bg-white rounded-lg shadow-lg p-8 text-center flex flex-col">
+                        <h3 class="text-2xl font-bold text-gray-900">1. Hubungi melalui Whatsapp</h3>
+                        <p class="mt-4 text-base text-gray-600 flex-grow">
+                            (Paling Direkomendasikan) Cara terbaik agar laporan Anda tercatat rapi dan cepat ditangani oleh tim yang tepat.
+                        </p>
+                        <a href="https://wa.me/+6285183136683" class="mt-8 inline-block bg-green-600 text-white font-bold px-6 py-3 rounded-lg hover:bg-green-700 transition duration-300">
+                            <!-- Ganti '#' dengan link Google Form Anda -->Kirim Pesan Whatsapp
+                        </a>
+                    </div>
+                    
+                    <!-- Opsi 2: WhatsApp (Diedit) -->
+                    <!-- Diganti menjadi duplikat Opsi 1 -->
+                    <div class="bg-white rounded-lg shadow-lg p-8 text-center flex flex-col">
+                        <h3 class="text-2xl font-bold text-gray-900">2. Isi Formulir Online</h3>
+                        <p class="mt-4 text-base text-gray-600 flex-grow">
+                            Cara kedua agar laporan Anda tercatat dan dapat ditangani oleh tim yang tepat.
+                        </p>
+                        <a href="#" class="mt-8 inline-block bg-green-600 text-white font-bold px-6 py-3 rounded-lg hover:bg-green-700 transition duration-300">
+                            <!-- Ganti '#' dengan link Google Form Anda -->Buka Formulir Laporan (Coming Soon)
+                        </a>
+                    </div>
+
+                    <!-- Opsi 3 Dihapus -->
+                    
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer --><footer class="bg-gray-800">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+            <p class="text-center text-base text-gray-400">
+                &copy; <span id="year"></span> OSIS SMA Islam Al Azhar 16. Dibuat dengan ❤️ oleh Sekbid IT.
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        // Script untuk Menu Mobile
+        const menuButton = document.getElementById('menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+
+        menuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Menutup menu mobile setelah link di-klik
+        mobileMenuLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Script untuk Tahun Dinamis di Footer
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
