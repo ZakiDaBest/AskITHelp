@@ -33,11 +33,15 @@
                 
                 <span class="text-xl font-bold text-gray-800">OSIS SMA Islam Al Azhar 16</span>
             </div>
-            <button class="md:hidden flex items-center">
+            
+            <!-- Tombol Hamburger - Diberi ID -->
+            <button id="mobile-menu-button" class="md:hidden flex items-center">
                 <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
                 </svg>
             </button>
+            
+            <!-- Menu Desktop (Tetap tersembunyi di mobile) -->
             <div class="hidden md:flex space-x-6">
                 <a href="#" class="text-gray-600 hover:text-green-700 font-medium">Home</a>
                 <a href="#tentang-kami" class="text-gray-600 hover:text-green-700 font-medium">Tentang Kami</a>
@@ -46,6 +50,15 @@
                 <a href="#kontak" class="text-gray-600 hover:text-green-700 font-medium">Kontak</a>
             </div>
         </nav>
+
+        <!-- Menu Mobile (Baru) - Muncul saat tombol hamburger diklik -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white shadow-md">
+            <a href="#" class="block py-3 px-6 text-gray-600 hover:bg-gray-100 hover:text-green-700 font-medium">Home</a>
+            <a href="#tentang-kami" class="block py-3 px-6 text-gray-600 hover:bg-gray-100 hover:text-green-700 font-medium">Tentang Kami</a>
+            <a href="#program-kerja" class="block py-3 px-6 text-gray-600 hover:bg-gray-100 hover:text-green-700 font-medium">Program Kerja</a>
+            <a href="#struktur-organisasi" class="block py-3 px-6 text-gray-600 hover:bg-gray-100 hover:text-green-700 font-medium">Struktur</a>
+            <a href="#kontak" class="block py-3 px-6 text-gray-600 hover:bg-gray-100 hover:text-green-700 font-medium">Kontak</a>
+        </div>
     </header>
 
 <main>
@@ -312,6 +325,30 @@
         </div>
     </footer>
 
+    <!-- Script untuk Toggle Menu Mobile -->
+    <script>
+        // Ambil elemen tombol dan menu
+        const menuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        // Tambahkan event listener 'click' ke tombol
+        menuButton.addEventListener('click', () => {
+            // Toggle (tambah/hapus) class 'hidden' pada elemen menu mobile
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Ambil semua link di dalam menu mobile
+        const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+
+        // Tambahkan event listener ke setiap link
+        mobileMenuLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                // Sembunyikan menu (tambahkan class 'hidden') saat link di-klik
+                // Ini agar menu otomatis tertutup setelah memilih halaman
+                mobileMenu.classList.add('hidden');
+            });
+        });
+    </script>
+
 </body>
 </html>
-
