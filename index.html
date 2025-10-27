@@ -11,6 +11,10 @@
         body {
             font-family: 'Inter', sans-serif;
         }
+        /* Menambahkan smooth scroll */
+        html {
+            scroll-behavior: smooth;
+        }
     </style>
 </head>
 <body class="bg-gray-100">
@@ -18,22 +22,29 @@
     <!-- Header / Navbar --><header class="bg-white shadow-md sticky top-0 z-50">
         <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
             <div class="flex items-center space-x-3">
-                <!-- Placeholder Logo --><div class="w-10 h-10 bg-green-600 rounded-full flex items-center justify-center text-white font-bold">
-                    A
-                </div>
+                
+                <!-- GANTI 'src' DI BAWAH DENGAN LINK .PNG LOGO ANDA -->
+                <img 
+                    src="/Images/Logo.png" 
+                    alt="Logo OSIS" 
+                    class="w-10 h-10 rounded-full object-cover bg-gray-200"
+                    onerror="this.src='https://placehold.co/40x40/E2E8F0/94A3B8?text=Logo'"
+                >
+                
                 <span class="text-xl font-bold text-gray-800">OSIS SMA Islam Al Azhar 16</span>
-            </div>
-            <div class="hidden md:flex space-x-6">
-                <a href="#" class="text-gray-600 hover:text-green-700 font-medium">Home</a>
-                <a href="#tentang-kami" class="text-gray-600 hover:text-green-700 font-medium">Tentang Kami</a>
-                <a href="#program-kerja" class="text-gray-600 hover:text-green-700 font-medium">Program Kerja</a>
-                <a href="#kontak" class="text-gray-600 hover:text-green-700 font-medium">Kontak</a>
             </div>
             <button class="md:hidden flex items-center">
                 <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
                 </svg>
             </button>
+            <div class="hidden md:flex space-x-6">
+                <a href="#" class="text-gray-600 hover:text-green-700 font-medium">Home</a>
+                <a href="#tentang-kami" class="text-gray-600 hover:text-green-700 font-medium">Tentang Kami</a>
+                <a href="#program-kerja" class="text-gray-600 hover:text-green-700 font-medium">Program Kerja</a>
+                <a href="#struktur-organisasi" class="text-gray-600 hover:text-green-700 font-medium">Struktur</a>
+                <a href="#kontak" class="text-gray-600 hover:text-green-700 font-medium">Kontak</a>
+            </div>
         </nav>
     </header>
 
@@ -52,7 +63,55 @@
             </div>
         </section>
 
-        <!-- Seksi Sekbid --><section class="container mx-auto px-4 md:px-6 py-16">
+        <!-- Seksi Tentang Kami --><section id="tentang-kami" class="py-16 bg-white my-16 shadow-inner scroll-m-20 md:scroll-m-24">
+            <div class="container mx-auto px-4 md:px-6">
+                <h2 class="text-3xl font-bold text-center text-gray-800 mb-4">Tentang Kami</h2>
+                <p class="text-center text-gray-600 mb-12 max-w-3xl mx-auto">
+                    OSIS SMA Islam Al Azhar 16 adalah organisasi siswa intra sekolah yang menjadi wadah bagi para siswa untuk belajar berorganisasi, menyalurkan aspirasi, dan mengembangkan potensi diri dalam bingkai nilai-nilai keislaman.
+                </p>
+                <div class="flex flex-col md:flex-row gap-8 items-center">
+                    <div class="md:w-1/2">
+                        <img src="/Images/VisiMisi.png" alt="Visi Misi OSIS" class="rounded-xl shadow-lg w-full h-auto object-cover">
+                    </div>
+                    <div class="md:w-1/2 space-y-4">
+                        <h3 class="text-2xl font-semibold text-gray-800">Visi</h3>
+                        <p class="text-gray-600">"Menjadikan OSIS SMA Islam Al Azhar 16 sebagai pionir murid untuk menjadi generasi muslim yang beradab, berprestasi, dan adaptif terhadap perkembangan zaman"</p>
+                        <h3 class="text-2xl font-semibold text-gray-800">Misi</h3>
+                        <ul class="list-disc list-inside text-gray-600 space-y-2">
+                            <li>Menjadi teladan untuk menerapkan adab dalam kehidupan sehari-hari</li>
+                            <li>Mendorong pencapaian prestasi murid dalam berbagai aspek</li>
+                            <li>Mengembangkan kemampuan murid terhadap perkembangan zaman</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seksi Program Kerja --><section id="program-kerja" class="container mx-auto px-4 md:px-6 py-16 scroll-m-20 md:scroll-m-24">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-4">Program Kerja Unggulan</h2>
+            <p class="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
+                Beberapa inisiatif utama kami yang dirancang untuk memberikan dampak positif bagi seluruh siswa SMA Islam Al Azhar 16.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Proker 1 --><a href="proker-cup.html" class="block bg-white rounded-xl shadow-lg p-6 text-center transform transition-all duration-300 hover:scale-105">
+                    <div class="text-5xl text-green-600 mb-4">🎙️</div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">Radio 16</h3>
+                    <p class="text-gray-600 text-sm">Ajang kreativitas dan bakat siswa dalam bidang siaran radio dan public speaking setiap hari Rabu dan Kamis.</p>
+                </a>
+                <!-- Proker 2 --><a href="proker-ramadhan.html" class="block bg-white rounded-xl shadow-lg p-6 text-center transform transition-all duration-300 hover:scale-105">
+                    <div class="text-5xl text-green-600 mb-4">🎆</div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">Albicy Specta</h3>
+                    <p class="text-gray-600 text-sm">Event mengenai gelar karya sekaligus memperingati hari ulang tahun sekolah.</p>
+                </a>
+                <!-- Proker 3 --><a href="help" class="block bg-white rounded-xl shadow-lg p-6 text-center transform transition-all duration-300 hover:scale-105">
+                    <div class="text-5xl text-green-600 mb-4">💻</div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">Ask IT Helpdesk</h3>
+                    <p class="text-gray-600 text-sm">Helpline mengenai masalah teknis di sekolah.</p>
+                </a>
+            </div>
+        </section>
+
+        <!-- Seksi Sekbid --><section id="struktur-organisasi" class="container mx-auto px-4 md:px-6 py-16 scroll-m-20 md:scroll-m-24">
             <h2 class="text-3xl font-bold text-center text-gray-800 mb-4">Struktur Organisasi</h2>
             <p class="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
                 Kenali lebih dekat struktur inti dan 11 Sekretariat Bidang (Sekbid) yang menjadi motor penggerak OSIS SMA Islam Al Azhar 16.
@@ -206,82 +265,25 @@
             </div>
         </section>
 
-        <!-- Seksi Tentang Kami -->
-        <section id="tentang-kami" class="py-16 bg-white my-16 shadow-inner">
-            <div class="container mx-auto px-4 md:px-6">
-                <h2 class="text-3xl font-bold text-center text-gray-800 mb-4">Tentang Kami</h2>
-                <p class="text-center text-gray-600 mb-12 max-w-3xl mx-auto">
-                    OSIS SMA Islam Al Azhar 16 adalah organisasi siswa intra sekolah yang menjadi wadah bagi para siswa untuk belajar berorganisasi, menyalurkan aspirasi, dan mengembangkan potensi diri dalam bingkai nilai-nilai keislaman.
-                </p>
-                <div class="flex flex-col md:flex-row gap-8 items-center">
-                    <div class="md:w-1/2">
-                        <img src="https://placehold.co/600x400/5fa86c/ffffff?text=Visi+Misi+OSIS" alt="Visi Misi OSIS" class="rounded-xl shadow-lg w-full h-auto object-cover">
-                    </div>
-                    <div class="md:w-1/2 space-y-4">
-                        <h3 class="text-2xl font-semibold text-gray-800">Visi</h3>
-                        <p class="text-gray-600">"Menjadikan OSIS SMA Islam Al Azhar 16 sebagai organisasi yang inspiratif, kolaboratif, dan berakhlak mulia, serta mampu mewadahi seluruh potensi siswa."</p>
-                        <h3 class="text-2xl font-semibold text-gray-800">Misi</h3>
-                        <ul class="list-disc list-inside text-gray-600 space-y-2">
-                            <li>Meningkatkan keimanan dan ketaqwaan kepada Allah SWT.</li>
-                            <li>Mengoptimalkan program kerja yang kreatif dan inovatif.</li>
-                            <li>Menjalin komunikasi yang baik antar seluruh warga sekolah.</li>
-                            <li>Menjadi teladan dalam sikap dan perilaku sehari-hari.</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
 
-        <!-- Seksi Program Kerja -->
-        <section id="program-kerja" class="container mx-auto px-4 md:px-6 py-16">
-            <h2 class="text-3xl font-bold text-center text-gray-800 mb-4">Program Kerja Unggulan</h2>
-            <p class="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
-                Beberapa inisiatif utama kami yang dirancang untuk memberikan dampak positif bagi seluruh siswa SMA Islam Al Azhar 16.
-            </p>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <!-- Proker 1 -->
-                <div class="bg-white rounded-xl shadow-lg p-6 text-center transform transition-all duration-300 hover:scale-105">
-                    <div class="text-5xl text-green-600 mb-4">🏆</div>
-                    <h3 class="text-xl font-semibold text-gray-900 mb-2">Alazhar 16 Cup</h3>
-                    <p class="text-gray-600 text-sm">Ajang kompetisi olahraga dan seni antar siswa untuk mempererat persaudaraan dan sportivitas.</p>
-                </div>
-                <!-- Proker 2 -->
-                <div class="bg-white rounded-xl shadow-lg p-6 text-center transform transition-all duration-300 hover:scale-105">
-                    <div class="text-5xl text-green-600 mb-4">🌙</div>
-                    <h3 class="text-xl font-semibold text-gray-900 mb-2">Gema Ramadhan</h3>
-                    <p class="text-gray-600 text-sm">Rangkaian kegiatan keagamaan selama bulan suci Ramadhan untuk meningkatkan ibadah dan kepedulian sosial.</p>
-                </div>
-                <!-- Proker 3 -->
-                <div class="bg-white rounded-xl shadow-lg p-6 text-center transform transition-all duration-300 hover:scale-105">
-                    <div class="text-5xl text-green-600 mb-4">📚</div>
-                    <h3 class="text-xl font-semibold text-gray-900 mb-2">Literasi & Budaya</h3>
-                    <p class="text-gray-600 text-sm">Mengadakan pekan bahasa, bedah buku, dan pementasan seni untuk mengapresiasi sastra dan budaya.</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Seksi Kontak -->
-        <section id="kontak" class="py-16 bg-white my-16 shadow-inner">
+        <!-- Seksi Kontak --><section id="kontak" class="py-16 bg-white my-16 shadow-inner scroll-m-20 md:scroll-m-24">
             <div class="container mx-auto px-4 md:px-6 text-center">
                 <h2 class="text-3xl font-bold text-gray-800 mb-4">Hubungi Kami</h2>
                 <p class="text-gray-600 mb-8 max-w-lg mx-auto">
                     Punya pertanyaan, saran, atau kritik? Jangan ragu untuk menghubungi kami melalui platform di bawah ini.
                 </p>
                 <div class="flex flex-col md:flex-row justify-center gap-8">
-                    <!-- Alamat -->
-                    <div class="bg-gray-50 p-6 rounded-xl shadow-md flex-1">
+                    <!-- Alamat --><div class="bg-gray-50 p-6 rounded-xl shadow-md flex-1">
                         <h3 class="text-xl font-semibold text-gray-800 mb-2">Lokasi</h3>
                         <p class="text-gray-600">SMA Islam Al Azhar 16</p>
                         <p class="text-gray-600">Jl. Lingkar Bintaro No. 1, Bintaro, Tangerang Selatan</p>
                     </div>
-                    <!-- Email -->
-                    <div class="bg-gray-50 p-6 rounded-xl shadow-md flex-1">
+                    <!-- Email --><div class="bg-gray-50 p-6 rounded-xl shadow-md flex-1">
                         <h3 class="text-xl font-semibold text-gray-800 mb-2">Email</h3>
                         <p class="text-gray-600">osis@alazhar16.sch.id</p>
                         <p class="text-gray-600">sekbid.it@alazhar16.sch.id</p>
                     </div>
-                    <!-- Media Sosial -->
-                    <div class="bg-gray-50 p-6 rounded-xl shadow-md flex-1">
+                    <!-- Media Sosial --><div class="bg-gray-50 p-6 rounded-xl shadow-md flex-1">
                         <h3 class="text-xl font-semibold text-gray-800 mb-2">Media Sosial</h3>
                         <p class="text-gray-600">Instagram: @osisalazhar16</p>
                         <p class="text-gray-600">YouTube: OSIS Al Azhar 16</p>
@@ -305,5 +307,4 @@
 
 </body>
 </html>
-
 
