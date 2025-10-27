@@ -48,18 +48,30 @@
         </nav>
     </header>
 
-    <main>
-        <!-- Seksi Hero / Foto Bersama --><section class="relative h-96 md:h-[500px] w-full bg-gray-300">
-            <!-- Placeholder untuk Foto Bersama --><img 
-                src="/Images/Cover.jpg" 
-                alt="Foto Bersama OSIS SMA Islam Al Azhar 16"
-                class="w-full h-full object-cover"
-                onerror="this.src='https://placehold.co/1600x600/cccccc/333333?text=Gagal+Memuat+Gambar'"
-            >
-            <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
-                <h1 class="text-3xl md:text-5xl font-bold text-white text-center px-4">
-                    Selamat Datang di Website Resmi<br>OSIS SMA Islam Al Azhar 16
-                </h1>
+<main>
+        <!-- Seksi Hero / Foto Bersama (Layout Baru) --><section class="bg-white py-16">
+            <div class="container mx-auto px-4 md:px-6 flex flex-col md:flex-row items-center gap-12">
+                <!-- Kolom Teks Selamat Datang --><div class="md:w-1/2 text-center md:text-left">
+                    <h1 class="text-4xl md:text-5xl font-bold text-gray-800 leading-tight mb-4">
+                        Selamat Datang di Website Resmi<br><span class="text-green-600">OSIS SMA Islam Al Azhar 16</span>
+                    </h1>
+                    <p class="text-lg text-gray-600 max-w-lg mx-auto md:mx-0">
+                        Wadah inspirasi, kreasi, dan kontribusi siswa untuk mencapai potensi terbaik.
+                    </p>
+                    <div class="mt-8">
+                        <a href="#tentang-kami" class="bg-green-600 hover:bg-green-700 text-white font-medium py-3 px-8 rounded-full text-lg transition-colors shadow-lg hover:shadow-xl">
+                            Pelajari Lebih Lanjut
+                        </a>
+                    </div>
+                </div>
+                <!-- Kolom Foto Bersama --><div class="md:w-1/2">
+                    <img 
+                        src="/Images/Cover.jpg" 
+                        alt="Foto Bersama OSIS SMA Islam Al Azhar 16"
+                        class="w-full h-auto object-cover rounded-xl shadow-lg"
+                        onerror="this.src='https://placehold.co/700x500/cccccc/333333?text=Gagal+Memuat+Gambar'"
+                    >
+                </div>
             </div>
         </section>
 
