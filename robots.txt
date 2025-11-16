@@ -1,2 +1,4 @@
 User-agent:*
 Allow:/help
+
+Sitemap: https://osisaa16.my.id/sitemap_index.html
